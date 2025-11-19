@@ -4,3 +4,8 @@ ul{
     flex-direction: row;
     gap:2.5rem;
 }
+@media(max-width:767px){
+    ul{
+        flex-direction: column;
+    }
+}
