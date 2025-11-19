@@ -1,11 +1,11 @@
-ul{
+header nav ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap:2.5rem;
 }
 @media(max-width:767px){
-    ul{
+    header nav ul{
         flex-direction:column;
         text-align:center;
     }
