@@ -6,6 +6,7 @@ ul{
 }
 @media(max-width:767px){
     ul{
+        display:flex;
         flex-direction: column;
     }
 }
