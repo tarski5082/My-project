@@ -6,7 +6,8 @@ ul{
 }
 @media(max-width:767px){
     ul{
+        list-style-type: none;
         display:flex;
-        flex-direction: column;
+        flex-direction:column;
     }
 }
