@@ -1,6 +1,32 @@
+:root{
+--nav-bg-color:#B11E31;
+--ivory-white:#EED6BB;
+}
+*{
+    margin:0;
+}
+body{
+    background-color: var(--ivory-white);
+    
+}
+
+header{
+    background-color: var(--nav-bg-color);
+}
+
 ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    align-content: center;
     gap:2.5rem;
+}
+header nav ul li{
+    height:3rem;
+}
+@media(max-width:767px){
+    ul{
+        flex-direction: column;
+        text-align: center;
+    }
 }
