@@ -49,10 +49,6 @@ li{
     }
 }
 
-main{
-    height:100vh;
-    display:flex;  
-}
 #container{
     display:grid;
     height:100%;
@@ -65,6 +61,11 @@ main{
         display:flex;
         flex-direction:column;
     }
+}
+
+main{
+    height:100vh;
+    display:flex;  
 }
 
 .nav-button{
@@ -95,15 +96,4 @@ footer{
     align-items: center;
     justify-content: center;
     height: 7rem;
-}
-
-
-.landing-page{
-    display:block;
-    height:100%;
-}
-
-form{
-    height:100%;
-    width:35%;
 }
