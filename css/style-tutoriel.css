@@ -19,6 +19,11 @@ body{
     justify-content: space-between;
     
 }
+@media(max-width:767px){
+    body{
+        height:fit-content;
+    }
+}
 
 header{
     background-color: var(--nav-bg-color);
@@ -33,40 +38,102 @@ ul{
 }
 header nav ul li{
     height:3rem;
+    width:6.5rem;
 }
 @media(max-width:767px){
     ul{
         flex-direction: column;
     }
-}
-
-li{
-    width:6.5rem;
-}
-@media(max-width:767px){
-    li{
+header nav ul li{
         width:100%;
     }
 }
 
+
 #container{
     display:grid;
-    height:100%;
-    width:100%;
-    grid-template-columns:repeat(3,fr);
-    grid-template-rows:repeat(3,fr);
-}
-@media(max-width:767px){
-    #container{
-        display:flex;
-        flex-direction:column;
-    }
+    height:fit-content;
+    width:fit-content;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+    gap: 2.5rem;
 }
 
 main{
-    height:100vh;
-    display:flex;  
+    height:fit-content;
+    margin:3rem;
+    
 }
+article{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    align-items:center;
+    border-radius: .1rem;
+}
+article div{
+    height:3rem;
+    width:80%;
+    font-size: .7rem;
+}
+img{
+    height: 7rem;
+    width:auto;
+    max-width:100%;
+    object-fit:contain;
+}
+.photo{
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+}
+
+@media(max-width:767px){
+    main{
+        flex:1;
+        display:flex;
+        width:100%;
+        justify-content:center;
+    }
+    #container{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+        height:fit-content;
+        width: fit-content;
+        gap:3rem;
+    }
+    article{
+        min-height:25rem;
+        height:auto;
+        display:flex;
+        width:100%;
+        flex-direction:column;
+        justify-content:center;
+        flex-grow:0;
+    }
+    article img{
+    object-fit: cover; 
+    max-width: 100%;
+    height: 15rem; 
+    }
+    
+
+}
+#aa{
+    grid-column:1/2;
+    grid-row:1/2;
+}
+#ab{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+
+
+
+
+
+
 
 .nav-button{
     display:flex;
