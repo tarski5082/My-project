@@ -20,6 +20,7 @@ body{
     
 }
 
+
 header{
     background-color: var(--nav-bg-color);
 }
@@ -37,21 +38,17 @@ header nav ul li{
 li{
     width:6.5rem;
 }
-@media(max-width:767px){
-    ul{
-        display:flex;
-        flex-direction: column;
-    }
-    li{
-        width:100%;
-    }
-}
+
 
 
 
 main{
     height:100vh;
-    display:flex;  
+    
+form{
+    display:flex; 
+    flex-direction:column; 
+}
 }
 
 
