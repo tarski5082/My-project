@@ -1,0 +1,127 @@
+:root{
+--nav-bg-color:#b11e31;
+--ivory-white:#EED6BB;
+--footer-bg-color:#8a1a27;
+--hover-font-color:#E0E0E0;
+--hover-bg-color: #E03E52;
+--visited-link-navbar:#4deaff;
+}
+*{
+    margin:0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    font-size:1.1rem;
+    min-height: 100vh;
+    background-color: var(--ivory-white);
+    display: flex;
+    flex-direction:column;
+    
+}header{
+    background-color: var(--nav-bg-color);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+}
+header nav ul li{
+    height:3rem;
+    width:6.5rem;
+}
+
+.nav-button{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    
+}
+a{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+a:hover{
+    background-color: var(--hover-bg-color);
+    color:var(--hover-font-color);
+}
+a:visited{
+    color: var(--visited-link-navbar);
+}
+#album{
+    display:grid;
+    grid-template-columns: repeat(5,20rem);
+    gap:1rem;
+}
+.item{
+    width:20rem;
+    height:fit-content;
+    padding-bottom: 0;
+}
+.item img{
+    border: solid black 3px;
+}
+img{
+    width:100%;
+    height:auto;
+}
+@media(max-width:767px){
+    body{
+        height:fit-content;
+    }
+    header nav ul{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+
+    header nav ul li{
+        width:100%;
+    }
+    .item{
+        width:100%
+    }
+    
+    main{
+        margin:auto;
+        flex: 1;
+        display:flex;
+        
+    }
+    #album{
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+        align-items:center;
+        gap:0;
+    }
+    img{
+    width:100%;
+    height:auto;
+    }
+
+}
+
+
+main{
+    min-height:100vh;
+    height:fit-content;
+    margin:3rem;
+    padding: 1rem;
+    background-color: #EED6BB;
+    display:flex;
+    justify-content:flex-end;
+}
+footer{
+    background-color: var(--footer-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+}
