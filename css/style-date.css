@@ -1,0 +1,132 @@
+:root{
+--nav-bg-color:#b11e31;
+--ivory-white:#EED6BB;
+--footer-bg-color:#8a1a27;
+--hover-font-color:#E0E0E0;
+--hover-bg-color: #E03E52;
+--visited-link-navbar:#4deaff;
+}
+*{
+    margin:0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    font-size:1.1rem;
+    min-height: 100vh;
+    background-color: var(--ivory-white);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+}
+
+header{
+    background-color: var(--nav-bg-color);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+}
+header nav ul li{
+    height:3rem;
+    width:6.5rem;
+}
+
+main{
+    min-height:100vh;
+    height:fit-content;
+    margin:3rem;
+    padding: 1rem;
+    background-color: #EED6BB;
+    display:flex;
+    justify-content:flex-end;
+    padding-right:8rem;    
+    padding-top:7rem;
+}
+#landing {
+    background-image: url("../images/Tutoriel/landing-page.jpg");
+    background-size:cover;
+    height:100vh;
+    width:auto;
+}
+#landing #slogan{
+    background-color: #F5F1EB;
+    width:30%;
+    height:70%;
+    display: flex;
+    align-items:flex-start;
+}
+#title-slogan{
+    font-size:2.5rem;
+    font-weight:10;
+}
+#description-slogan{
+    font-size:.9rem;
+    text-align:justify;
+    margin-right: 2rem;
+    margin-top:1rem;
+}
+#text{
+    margin-top:5rem;
+    margin-left:2rem;
+}
+
+@media(max-width:767px){
+    body{
+        height:fit-content;
+        width:100%;
+    }
+    ul{
+        flex-direction: column;
+    }
+    header nav ul li{
+        width:100%;
+    }
+    
+    main{
+        margin:auto;
+        flex: 1;
+        display:flex;
+        width:100%;
+        justify-content:center;
+        background-image: url("../images/Tutoriel/landing-page.jpg");
+        background-size:cover;
+    }
+    #container{
+        display: flex;
+        flex-direction:column;
+    }
+.nav-button{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    
+}
+a{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+
+a:hover{
+    background-color: var(--hover-bg-color);
+    color:var(--hover-font-color);
+}
+a:visited{
+    color: var(--visited-link-navbar);
+}
+
+
+footer{
+    background-color: var(--footer-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+}
