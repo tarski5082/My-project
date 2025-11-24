@@ -95,7 +95,7 @@ form{
         margin:1rem;
         margin-left:auto;
         margin-right:auto;
-        width:100vh;
+        max-width:100vh;
     }
     input{
         width:100%;
